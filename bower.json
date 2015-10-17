@@ -1,0 +1,29 @@
+{
+  "name": "newsfeed",
+  "version": "0.0.0",
+  "authors": [
+    "SGS Venkatesh <venki.iitbbs@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "newsfeed"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "nprogress": "~0.2.0",
+    "moment": "~2.10.6"
+  }
+}

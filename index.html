@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>News Feed</title>
+
+    <!--CSS Libraries-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/nprogress/nprogress.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <!--CSS Source-->
+    <link rel="stylesheet" href="assets/css/libs/menu.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script src="assets/js/libs/modernizr.custom.js"></script>
+</head>
+<body>
+    <div class="page-header">
+        <div class="header-name">
+            Newsfeed
+        </div>
+        <div id="api-hits"></div>
+    </div>
+    <div class="menu-container">
+        <div class="main">
+            <div class="column clearfix">
+                <div id="dl-menu" class="dl-menuwrapper">
+                    <button class="dl-trigger">Menu</button>
+                </div><!-- /dl-menuwrapper -->
+            </div>
+        </div>
+    </div>
+
+    <div class="feed-header"></div>
+    <div class="feed-container">
+        <div class="help-info">
+            <i class="fa fa-caret-left"></i>
+            <div class="help-text">
+                Select a category
+            </div>
+        </div>
+    </div>
+
+    <!--JS Libraries-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="assets/js/libs/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+
+    <!--JS Source-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        loadFeedCategories("list_feed");
+        loadFeedCategories("api_hits");
+    </script>
+</body>
+</html>

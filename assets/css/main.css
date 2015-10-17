@@ -1,0 +1,202 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+    background: #fffcf5;
+}
+
+a {
+    color: #666;
+    text-decoration: none!important;
+}
+
+a:hover {
+    color: #999;
+}
+
+.page-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 15px;
+    color: #25BD8B;
+    /* position: fixed; */
+}
+
+#api-hits {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+}
+
+.menu-container {
+    width: 300px;
+    position: fixed;
+}
+
+.menu-container .main .column {
+    width: 300px;
+}
+
+.feed-header {
+    background-color: #16a085;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    padding: 0 40px;
+    color: #FFF;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.feed-container {
+    margin-left: 320px;
+    width: calc(100% - 320px);
+    padding: 0 20px;
+}
+
+.feed-container .feed {
+    padding: 5px 0 15px;
+    border-bottom: 1px solid #BDC3C7;
+    margin: 10px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.feed-container .feed:hover {
+    border-bottom: 1px solid #25BD8B;
+}
+
+.feed-container .feed:hover .title{
+    color: #25BD8B;
+}
+
+.feed-container .feed .preview {
+    font-size: 14px;
+}
+
+.feed-container .feed .preview .title {
+    font-size: 18px;
+}
+
+.feed-container .feed .preview .snippet {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.feed-container .feed .preview .author {
+    margin: 0 10px;
+    float: right;
+}
+
+.feed-container .feed .preview .author:before {
+    content: "\2014";
+}
+
+.feed-container .feed .preview .love {
+    margin: 0 10px;
+    float: right;
+    color: #EF4836;
+}
+
+.feed-container .feed .preview .posted-time {
+    margin: 0 10px;
+    float: right;
+}
+
+.feed-container .feed .preview .posted-time:before {
+    content: "posted "
+}
+
+.feed-container .feed .full-content {
+    color: #333;
+    margin-top: 20px;
+}
+
+.feed-container .help-info {
+    font-size: 20px;
+    margin: 10px 0 10px -20px;
+}
+
+.feed-container .help-info .help-text {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+
+    #api-hits {
+        display: none;
+    }
+
+    .menu-container {
+        position: static;
+        height: 300px;
+        width: 100%;
+    }
+
+    .feed-header {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .menu-container .main .column {
+        width: 100%;
+    }
+
+    .dl-menuwrapper {
+        max-width: 100%;
+    }
+
+    .dl-menuwrapper button {
+        width: 100%;
+    }
+
+    .dl-menuwrapper:first-child {
+        margin-right: 0;
+    }
+
+    .feed-container {
+        margin-left: 0;
+        width: inherit;
+        padding: 0 20px;
+    }
+
+    .feed-container .help-info {
+        display: none;
+    }
+
+    .feed-container .feed .full-content img {
+        max-width: 95%;
+        height: auto;
+    }
+}
